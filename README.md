@@ -2,7 +2,7 @@
 
 ## 🖥 Preview
 <p align = "center">
-  <img src = "https://github.com/ecpieritz/xxx" width = "800">
+  <img src = "https://github.com/ecpieritz/calculator-vue/blob/main/public/img/print.jpg?raw=true" max-width = "800">
 </p>
 
 ---
