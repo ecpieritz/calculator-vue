@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-    <Display value="1000"/>
+    <Display :value="displayValue" />
     <Button label="AC" triple @onClick="clearMemory" />
     <Button label="/" operation @onClick="setOperation" />
     <Button label="7" @onClick="addDigit" />
@@ -26,10 +26,19 @@ import Display from "../components/Display"
 import Button from "../components/Button"
 
 export default {
+  data: function(){
+    return{
+      displayValue: "0",
+      clearDisplay: false,
+      operation: null,
+      values:[0, 0],
+      current: 0
+    }
+  },
   components:{Display, Button},
   methods: {
     clearMemory(){
-      
+      Object.assign(this.$data, this.$options.data())
     },
     setOperation(operation){
       
